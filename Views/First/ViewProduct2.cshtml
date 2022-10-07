@@ -1,0 +1,12 @@
+@model mvc.Models.ProductModel
+@{
+    Layout = "_Layout";
+    var product = ViewData["product"] as ProductModel;
+}
+<p>@ViewData["Title"]</p>
+<div style="background: green; margin: 30px; padding: 30px">
+    <h1>Xin chao @product.Name</h1>
+    <p>Gia san pham: @product.Price</p>
+</div>
+<hr>
+@this.Path
